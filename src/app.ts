@@ -1,2 +1,9 @@
-const text = 'Hello, World!';
-console.log(text); // eslint-disable-line no-console
+const sum = (...summands: number[]): number => {
+    return summands.reduce((summand, total) => total + summand);
+};
+
+const multiply = (...factors: number[]): number => {
+    return factors.reduce((factor, total) => total * factor);
+};
+
+export { sum, multiply };
