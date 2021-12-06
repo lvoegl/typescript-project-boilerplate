@@ -13,7 +13,8 @@
         "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
         "lint:fix": "eslint --fix 'src/**/*.ts' 'test/**/*.ts'",
         "test": "mocha -r ts-node/register test/**/*.spec.ts",
-        "test:coverage": "nyc yarn test"
+        "test:coverage": "nyc yarn test",
+        "docs": "typedoc --entryPoints src/app.ts"
     },
     "lint-staged": {
         "src/**/*.ts": ["eslint --fix"],
@@ -40,6 +41,7 @@
         "nyc": "^15.1.0",
         "prettier": "^2.5.1",
         "ts-node": "^10.4.0",
+        "typedoc": "^0.22.10",
         "typescript": "^4.5.2"
     },
     "dependencies": {}
